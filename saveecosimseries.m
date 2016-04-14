@@ -23,7 +23,7 @@ function S = saveecosimseries(simfolder)
 
 % Copyright 2007 Kelly Kearney
 
-error(nargchk(1,1,nargin));
+narginchk(1,1);
 
 if ~exist(simfolder,'dir')
     error('Cannot find input folder');
