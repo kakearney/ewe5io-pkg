@@ -48,7 +48,7 @@ function Data = ewetsread(filename)
 % Check input
 %-------------------
 
-error(nargchk(1,1,nargin));
+narginchk(1,1);
 
 if ~exist(filename, 'file')
     error('Cannot find file');

@@ -39,7 +39,7 @@ function Data = ecosimread(simfile)
 % Check input
 %-----------------------------
 
-error(nargchk(1,1,nargin));
+narginchk(1,1);
 
 if ~exist(simfile, 'file')
     error('Cannot find input file');
